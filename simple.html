@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Emmanuel H. Castillo · Versión sencilla</title>
+<meta name="description" content="Emmanuel H. Castillo: fotos, libro, edición de vídeo y contacto. Versión sencilla.">
+<meta name="theme-color" content="#f4ede1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230f0d0b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-style='italic' font-size='28' text-anchor='middle' fill='%23e9c9a8'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#f4ede1;--card:#fffaf2;--ink:#17130f;--soft:#4a4239;--line:#e2d6c3;--copper:#b4643a;--copperD:#8f4a2b;--green:#1f7a4d;--night:#13213a}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:19px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+.wrap{max-width:560px;margin:0 auto;padding:20px 16px 48px}
+.lang{display:flex;gap:6px;justify-content:center;margin:4px 0 22px}
+.lang button{min-width:64px;min-height:48px;border-radius:12px;border:2px solid var(--line);background:var(--card);font-weight:600;font-size:17px;color:var(--soft)}
+.lang button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+header{text-align:center;margin-bottom:22px}
+.av{width:84px;height:84px;margin:0 auto 14px;border-radius:50%;background:var(--ink);color:#e9c9a8;display:grid;place-items:center;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:42px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:34px;line-height:1.1;margin:0 0 8px;letter-spacing:-.01em}
+header p{margin:0;color:var(--soft);font-size:18px}
+.cards{display:grid;gap:14px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:20px}
+.top{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+.ic{width:52px;height:52px;flex:none;border-radius:14px;display:grid;place-items:center;color:#fff}
+.ic svg{width:28px;height:28px}
+h2{font-size:22px;line-height:1.2;margin:0;font-weight:700}
+.card p{margin:0 0 16px;color:var(--soft)}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;padding:14px 18px;border-radius:14px;border:0;font-weight:700;font-size:19px;text-decoration:none;color:#fff;background:var(--copper);text-align:center;line-height:1.2}
+.btn svg{width:24px;height:24px;flex:none}
+.btn:active{transform:scale(.98)}
+.btn.wa{background:var(--green)}
+.btn.dark{background:var(--ink)}
+.btn.line{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn+.btn{margin-top:10px}
+.book{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+.book img{width:92px;border-radius:4px;box-shadow:0 6px 16px rgba(0,0,0,.25);flex:none}
+.book b{display:block;font-family:Fraunces,Georgia,serif;font-weight:500;font-size:23px;line-height:1.15}
+.book span{color:var(--soft);font-size:17px}
+.key{background:var(--bg);border-radius:14px;padding:14px 16px;margin:0 0 14px}
+.key small{display:block;font-size:15px;color:var(--soft);font-weight:600}
+.key b{display:block;font-size:26px;letter-spacing:.02em;font-variant-numeric:tabular-nums;word-break:break-word}
+.key span{display:block;font-size:17px;margin-top:4px}
+dl{margin:14px 0}
+dl div{padding:10px 0;border-top:1px solid var(--line)}
+dt{font-size:15px;color:var(--soft);font-weight:600}
+dd{margin:2px 0 0;font-size:19px;font-weight:600;word-break:break-word}
+dd.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:18px}
+.tip{background:var(--bg);border-radius:12px;padding:12px 14px;font-size:16px;color:var(--soft);margin:0 0 14px}
+.ok{display:block;text-align:center;font-weight:700;color:var(--green);min-height:1.5em;margin-top:8px}
+.wait{display:inline-block;background:#f0dfb8;color:#6b4b10;font-weight:700;font-size:16px;padding:6px 12px;border-radius:99px;margin-bottom:10px}
+.prod{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit}
+.prod img{width:64px;height:64px;object-fit:cover;border-radius:10px}
+.prod b{font-size:18px}
+.prod span{display:block;font-size:16px;color:var(--copperD);font-weight:600}
+.full{display:block;text-align:center;margin:28px 0 8px;font-weight:600;color:var(--ink);font-size:18px;padding:14px;border-radius:14px;border:2px dashed var(--line);text-decoration:none}
+footer{text-align:center;color:var(--soft);font-size:15px;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button data-lang="es">Español</button><button data-lang="pt">Português</button><button data-lang="en">English</button>
+  </div>
+
+  <header>
+    <div class="av" aria-hidden="true">E</div>
+    <h1>Emmanuel H. Castillo</h1>
+    <p data-t="sub"></p>
+  </header>
+
+  <main class="cards" id="cards"></main>
+
+  <a class="full" href="index.html" data-t="full"></a>
+  <footer>© <span id="yr"></span> Emmanuel H. Castillo · Boa Vista, Roraima</footer>
+</div>
+
+<script src="contenido.js"></script>
+<script>
+(()=>{
+"use strict";
+const D=(typeof CONTENIDO!=="undefined")?CONTENIDO:{};
+const E=D.enlaces||{}, P=(D.donacion||{}).pix||{}, M=(D.donacion||{}).internacional||{}, B=D.libros||[], S=D.tienda||[];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const okUrl=u=>/^https:\/\/[^\s]+$/i.test(String(u||"").trim());
+const okImg=u=>okUrl(u)||/^[\w.\-\/]+\.(jpe?g|png|webp|gif|avif)$/i.test(String(u||"").trim());
+const wa=String(E.whatsapp||"").replace(/\D/g,"");
+const waHref=m=>`https://wa.me/${wa}?text=${encodeURIComponent(m)}`;
+
+const T={
+es:{sub:"Escritor, fotógrafo y editor de vídeo. Vivo en Boa Vista, Brasil.",
+ fotoT:"Sesión de fotos",fotoP:"Retratos al aire libre en Boa Vista, con luz natural. Desde R$ 80. La primera sesión tiene 10 % de descuento.",fotoB:"Reservar por WhatsApp",fotoM:"¡Hola, Emmanuel! Quiero reservar una sesión de fotos.",
+ libroT:"Mi libro",libroB:"Comprar en Amazon",libroBy:"por Emmanuel H. Castillo",
+ reelsT:"Edición de vídeo",reelsP:"Edito reels y vídeos cortos: cortes, subtítulos, música y animaciones.",reelsB:"Pedir precio por WhatsApp",reelsM:"¡Hola, Emmanuel! Quiero un presupuesto de edición de vídeo.",
+ pixT:"Apoyar con PIX (Brasil)",pixP:"Si quieres ayudarme, copia la clave y pégala en la app de tu banco.",pixK:"Clave PIX",pixB:"Copiar clave PIX",
+ usdT:"Apoyar desde otro país (dólares)",usdP:"Transferencia internacional en dólares, directa a mi cuenta.",usdV:"Ver los datos",usdH:"Ocultar los datos",usdC:"Copiar todos los datos",usdTip:"En tu banco elige «transferencia internacional (SWIFT)» en dólares y escribe estos datos tal cual.",
+ benef:"Beneficiario",moneda:"Moneda",banco:"Banco",swift:"SWIFT",iban:"IBAN",inter:"Banco intermediario",swiftI:"SWIFT intermediario",titular:"Titular",
+ copied:"✓ Copiado",
+ tiendaT:"Mi tienda",tiendaW:"En espera",tiendaP:"Todavía la estoy preparando. Pronto podrás ver aquí cosas que uso y recomiendo.",tiendaO:"Cosas que uso y recomiendo. Algunos enlaces son de afiliado: yo recibo una pequeña comisión y tú pagas lo mismo.",ver:"Ver",
+ contT:"Hablar conmigo",waB:"WhatsApp",igB:"Instagram",liB:"LinkedIn",
+ full:"Ver la versión completa de la web →"},
+pt:{sub:"Escritor, fotógrafo e editor de vídeo. Moro em Boa Vista, Roraima.",
+ fotoT:"Ensaio fotográfico",fotoP:"Retratos ao ar livre em Boa Vista, com luz natural. A partir de R$ 80. O primeiro ensaio tem 10% de desconto.",fotoB:"Reservar pelo WhatsApp",fotoM:"Oi, Emmanuel! Quero reservar um ensaio.",
+ libroT:"Meu livro",libroB:"Comprar na Amazon",libroBy:"por Emmanuel H. Castillo (em espanhol)",
+ reelsT:"Edição de vídeo",reelsP:"Edito reels e vídeos curtos: cortes, legendas, música e animações.",reelsB:"Pedir preço pelo WhatsApp",reelsM:"Oi, Emmanuel! Quero um orçamento de edição de vídeo.",
+ pixT:"Apoiar com PIX",pixP:"Se quiser me ajudar, copie a chave e cole no app do seu banco.",pixK:"Chave PIX",pixB:"Copiar chave PIX",
+ usdT:"Apoiar de outro país (dólares)",usdP:"Transferência internacional em dólares, direto na minha conta.",usdV:"Ver os dados",usdH:"Ocultar os dados",usdC:"Copiar todos os dados",usdTip:"No seu banco, escolha «transferência internacional (SWIFT)» em dólares e digite estes dados exatamente assim.",
+ benef:"Beneficiário",moneda:"Moeda",banco:"Banco",swift:"SWIFT",iban:"IBAN",inter:"Banco intermediário",swiftI:"SWIFT intermediário",titular:"Titular",
+ copied:"✓ Copiado",
+ tiendaT:"Minha loja",tiendaW:"Em espera",tiendaP:"Ainda estou preparando. Em breve você vai ver aqui coisas que uso e recomendo.",tiendaO:"Coisas que uso e recomendo. Alguns links são de afiliado: eu recebo uma pequena comissão e você paga o mesmo.",ver:"Ver",
+ contT:"Falar comigo",waB:"WhatsApp",igB:"Instagram",liB:"LinkedIn",
+ full:"Ver a versão completa do site →"},
+en:{sub:"Writer, photographer and video editor. I live in Boa Vista, Brazil.",
+ fotoT:"Photo session",fotoP:"Outdoor portraits in Boa Vista, in natural light. From R$ 80. Your first session is 10% off.",fotoB:"Book on WhatsApp",fotoM:"Hi Emmanuel! I'd like to book a photo session.",
+ libroT:"My book",libroB:"Buy on Amazon",libroBy:"by Emmanuel H. Castillo (in Spanish)",
+ reelsT:"Video editing",reelsP:"I edit reels and short videos: cuts, captions, music and animation.",reelsB:"Ask for a price on WhatsApp",reelsM:"Hi Emmanuel! I'd like a quote for video editing.",
+ pixT:"Support with PIX (Brazil)",pixP:"If you'd like to help, copy the key and paste it into your banking app.",pixK:"PIX key",pixB:"Copy PIX key",
+ usdT:"Support from abroad (US dollars)",usdP:"International transfer in US dollars, straight to my account.",usdV:"Show the details",usdH:"Hide the details",usdC:"Copy all details",usdTip:"In your bank, choose “international wire (SWIFT)” in US dollars and enter these details exactly as shown.",
+ benef:"Beneficiary",moneda:"Currency",banco:"Bank",swift:"SWIFT",iban:"IBAN",inter:"Intermediary bank",swiftI:"Intermediary SWIFT",titular:"Account holder",
+ copied:"✓ Copied",
+ tiendaT:"My shop",tiendaW:"On hold",tiendaP:"I'm still getting it ready. Soon you'll find things I use and recommend here.",tiendaO:"Things I use and recommend. Some links are affiliate links: I get a small commission and you pay the same.",ver:"View",
+ contT:"Talk to me",waB:"WhatsApp",igB:"Instagram",liB:"LinkedIn",
+ full:"See the full version of the site →"}
+};
+let lang="";
+try{ lang=localStorage.getItem("ehc-lang")||""; }catch(e){}
+if(!T[lang]){ const n=(navigator.language||"pt").slice(0,2).toLowerCase(); lang=T[n]?n:"pt"; }
+const t=k=>T[lang][k]??T.es[k]??k;
+
+const ic={
+cam:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8h3.5L8 5.5h8L17.5 8H21v11H3z"/><circle cx="12" cy="13" r="3.6"/></svg>',
+book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 4.5h11a3 3 0 0 1 3 3V20H7a3 3 0 0 1-3-3z"/><path d="M4 17a3 3 0 0 1 3-3h11"/></svg>',
+vid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg>',
+heart:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9.2-9C1.7 7.8 3.8 5 7 5c2 0 3.4 1.1 5 3 1.6-1.9 3-3 5-3 3.2 0 5.3 2.8 4.2 6-1.7 4.4-9.2 9-9.2 9z"/></svg>',
+globe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg>',
+bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>',
+chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>',
+wa:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8.5 8.5 0 1 1 8.4 19z"/><path d="M9.2 8.6c.2-.5.5-.6.8-.6h.5l.8 1.9-.6.8c.5 1 1.3 1.8 2.3 2.3l.8-.6 1.9.8v.5c0 .3-.1.6-.6.8-.8.4-1.9.3-3.2-.5a8 8 0 0 1-2.6-2.6c-.8-1.3-.9-2.4-.5-3.2z" fill="currentColor" stroke="none"/></svg>',
+ig:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>',
+li:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 9h3v10H5zM6.5 4.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM10 9h2.9v1.4c.4-.8 1.4-1.6 3-1.6 3.1 0 3.6 2 3.6 4.6V19h-3v-4.9c0-1.2 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5v5H10z"/></svg>',
+copy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M4 16V5a2 2 0 0 1 2-2h9"/></svg>',
+eye:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>'
+};
+const head=(icon,bg,title)=>`<div class="top"><span class="ic" style="background:${bg}">${icon}</span><h2>${esc(title)}</h2></div>`;
+const a=(href,label,icon,cls="")=>`<a class="btn ${cls}" href="${esc(href)}" target="_blank" rel="noopener">${icon}<span>${esc(label)}</span></a>`;
+
+async function copyText(s){
+  try{ await navigator.clipboard.writeText(s); return true; }catch(e){
+    const ta=document.createElement("textarea"); ta.value=s; ta.setAttribute("readonly",""); ta.style.cssText="position:fixed;opacity:0;top:0;left:0";
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0,s.length); let ok=false; try{ ok=document.execCommand("copy"); }catch(_){} ta.remove(); return ok;
+  }
+}
+let showUsd=false;
+function render(){
+  document.documentElement.lang=lang==="pt"?"pt-BR":lang;
+  document.querySelectorAll("[data-t]").forEach(el=>el.textContent=t(el.dataset.t));
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===lang));
+  let h="";
+  const hasWa=wa.length>=10;
+  if(hasWa) h+=`<section class="card">${head(ic.cam,"#b4643a",t("fotoT"))}<p>${esc(t("fotoP"))}</p>${a(waHref(t("fotoM")),t("fotoB"),ic.wa,"wa")}</section>`;
+  const b=B[0];
+  if(b) h+=`<section class="card">${head(ic.book,"#5a3b24",t("libroT"))}<div class="book">${okImg(b.portada)?`<img src="${esc(b.portada)}" alt="">`:""}<div><b>${esc(b.titulo)}</b><span>${esc(t("libroBy"))}</span></div></div>${okUrl(b.amazon)?a(b.amazon,t("libroB"),ic.book,"dark"):""}</section>`;
+  if(hasWa) h+=`<section class="card">${head(ic.vid,"#13213a",t("reelsT"))}<p>${esc(t("reelsP"))}</p>${a(waHref(t("reelsM")),t("reelsB"),ic.wa,"wa")}</section>`;
+  if(P.clave) h+=`<section class="card">${head(ic.heart,"#8f4a2b",t("pixT"))}<p>${esc(t("pixP"))}</p>
+    <div class="key"><small>${esc(t("pixK"))}${P.tipo?` (${esc(P.tipo)})`:""}</small><b>${esc(P.clave)}</b>${P.titular?`<span>${esc(P.titular)}${P.banco?` · ${esc(P.banco)}`:""}</span>`:""}</div>
+    <button class="btn" id="cpPix">${ic.copy}<span>${esc(t("pixB"))}</span></button><span class="ok" id="okPix" role="status"></span></section>`;
+  if(M.iban||M.swift){
+    const row=(k,v,m)=>v?`<div><dt>${esc(t(k))}</dt><dd class="${m?"mono":""}">${esc(v)}</dd></div>`:"";
+    h+=`<section class="card">${head(ic.globe,"#1f5a7a",t("usdT"))}<p>${esc(t("usdP"))}</p>
+    <button class="btn line" id="tgUsd" aria-expanded="${showUsd}" aria-controls="usdBox">${ic.eye}<span>${esc(t(showUsd?"usdH":"usdV"))}</span></button>
+    <div id="usdBox" ${showUsd?"":"hidden"}><dl>${row("benef",M.beneficiario)}${row("moneda",M.moneda)}${row("banco",M.banco)}${row("swift",M.swift,1)}${row("iban",String(M.iban||"").replace(/\s/g,"").replace(/(.{4})/g,"$1 ").trim(),1)}${row("inter",M.intermediario)}${row("swiftI",M.swiftIntermediario,1)}</dl>
+    <p class="tip">${esc(t("usdTip"))}</p><button class="btn" id="cpUsd">${ic.copy}<span>${esc(t("usdC"))}</span></button><span class="ok" id="okUsd" role="status"></span></div></section>`;
+  }
+  const prods=S.filter(p=>p&&p.nombre&&okUrl(p.enlace));
+  h+=`<section class="card">${head(ic.bag,"#6b5d4b",t("tiendaT"))}${prods.length?`<p>${esc(t("tiendaO"))}</p>${prods.map(p=>`<a class="prod" href="${esc(p.enlace)}" target="_blank" rel="noopener sponsored">${okImg(p.foto)?`<img src="${esc(p.foto)}" alt="">`:""}<div><b>${esc(p.nombre)}</b><span>${esc(p.tienda||t("ver"))} ↗</span></div></a>`).join("")}`:`<span class="wait">${esc(t("tiendaW"))}</span><p style="margin:0">${esc(t("tiendaP"))}</p>`}</section>`;
+  let c="";
+  if(hasWa) c+=a(waHref(""),t("waB"),ic.wa,"wa");
+  if(okUrl(E.instagram)) c+=a(E.instagram,t("igB"),ic.ig,"dark");
+  if(okUrl(E.linkedin)) c+=a(E.linkedin,t("liB"),ic.li,"line");
+  if(c) h+=`<section class="card">${head(ic.chat,"#1f7a4d",t("contT"))}${c}</section>`;
+  $("#cards").innerHTML=h;
+  const cp=$("#cpPix"); if(cp) cp.onclick=async()=>{ const raw=/cpf/i.test(P.tipo||"")?String(P.clave).replace(/\D/g,""):String(P.clave).trim(); const ok=await copyText(raw); $("#okPix").textContent=ok?t("copied"):raw; };
+  const tg=$("#tgUsd"); if(tg) tg.onclick=()=>{ showUsd=!showUsd; $("#usdBox").hidden=!showUsd; tg.setAttribute("aria-expanded",showUsd); tg.querySelector("span").textContent=t(showUsd?"usdH":"usdV"); };
+  const cu=$("#cpUsd"); if(cu) cu.onclick=async()=>{ const L=[["benef",M.beneficiario],["moneda",M.moneda],["banco",M.banco],["swift",M.swift],["iban",String(M.iban||"").replace(/\s/g,"")],["inter",M.intermediario],["swiftI",M.swiftIntermediario]].filter(x=>x[1]).map(x=>`${t(x[0])}: ${x[1]}`).join("\n"); const ok=await copyText(L); $("#okUsd").textContent=ok?t("copied"):""; };
+}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>{ lang=b.dataset.lang; try{localStorage.setItem("ehc-lang",lang)}catch(e){} render(); }));
+$("#yr").textContent=new Date().getFullYear();
+render();
+})();
+</script>
+</body>
+</html>
